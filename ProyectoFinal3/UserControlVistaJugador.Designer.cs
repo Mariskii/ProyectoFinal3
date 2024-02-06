@@ -632,9 +632,9 @@
             this.label3FGM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3FGM.Location = new System.Drawing.Point(589, 9);
             this.label3FGM.Name = "label3FGM";
-            this.label3FGM.Size = new System.Drawing.Size(38, 24);
+            this.label3FGM.Size = new System.Drawing.Size(21, 24);
             this.label3FGM.TabIndex = 8;
-            this.label3FGM.Text = "0.1";
+            this.label3FGM.Text = "0";
             // 
             // label3PM
             // 
@@ -642,9 +642,9 @@
             this.label3PM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3PM.Location = new System.Drawing.Point(517, 9);
             this.label3PM.Name = "label3PM";
-            this.label3PM.Size = new System.Drawing.Size(38, 24);
+            this.label3PM.Size = new System.Drawing.Size(21, 24);
             this.label3PM.TabIndex = 7;
-            this.label3PM.Text = "0.1";
+            this.label3PM.Text = "0";
             // 
             // labelBLK
             // 
@@ -652,9 +652,9 @@
             this.labelBLK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBLK.Location = new System.Drawing.Point(450, 9);
             this.labelBLK.Name = "labelBLK";
-            this.labelBLK.Size = new System.Drawing.Size(38, 24);
+            this.labelBLK.Size = new System.Drawing.Size(21, 24);
             this.labelBLK.TabIndex = 6;
-            this.labelBLK.Text = "1.1";
+            this.labelBLK.Text = "0";
             // 
             // labelSTL
             // 
@@ -662,9 +662,9 @@
             this.labelSTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSTL.Location = new System.Drawing.Point(388, 9);
             this.labelSTL.Name = "labelSTL";
-            this.labelSTL.Size = new System.Drawing.Size(38, 24);
+            this.labelSTL.Size = new System.Drawing.Size(21, 24);
             this.labelSTL.TabIndex = 5;
-            this.labelSTL.Text = "1.1";
+            this.labelSTL.Text = "0";
             // 
             // labelAPP
             // 
@@ -672,9 +672,9 @@
             this.labelAPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAPP.Location = new System.Drawing.Point(314, 9);
             this.labelAPP.Name = "labelAPP";
-            this.labelAPP.Size = new System.Drawing.Size(38, 24);
+            this.labelAPP.Size = new System.Drawing.Size(21, 24);
             this.labelAPP.TabIndex = 4;
-            this.labelAPP.Text = "4.1";
+            this.labelAPP.Text = "0";
             // 
             // labelRPP
             // 
@@ -682,9 +682,9 @@
             this.labelRPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRPP.Location = new System.Drawing.Point(243, 9);
             this.labelRPP.Name = "labelRPP";
-            this.labelRPP.Size = new System.Drawing.Size(38, 24);
+            this.labelRPP.Size = new System.Drawing.Size(21, 24);
             this.labelRPP.TabIndex = 3;
-            this.labelRPP.Text = "7.9";
+            this.labelRPP.Text = "0";
             // 
             // labelTL
             // 
@@ -692,9 +692,9 @@
             this.labelTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTL.Location = new System.Drawing.Point(179, 9);
             this.labelTL.Name = "labelTL";
-            this.labelTL.Size = new System.Drawing.Size(48, 24);
+            this.labelTL.Size = new System.Drawing.Size(21, 24);
             this.labelTL.TabIndex = 2;
-            this.labelTL.Text = "89%";
+            this.labelTL.Text = "0";
             // 
             // labelTC
             // 
@@ -702,9 +702,9 @@
             this.labelTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTC.Location = new System.Drawing.Point(113, 9);
             this.labelTC.Name = "labelTC";
-            this.labelTC.Size = new System.Drawing.Size(48, 24);
+            this.labelTC.Size = new System.Drawing.Size(21, 24);
             this.labelTC.TabIndex = 1;
-            this.labelTC.Text = "34%";
+            this.labelTC.Text = "0";
             // 
             // labelPPP
             // 
@@ -712,9 +712,9 @@
             this.labelPPP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPPP.Location = new System.Drawing.Point(53, 9);
             this.labelPPP.Name = "labelPPP";
-            this.labelPPP.Size = new System.Drawing.Size(32, 24);
+            this.labelPPP.Size = new System.Drawing.Size(21, 24);
             this.labelPPP.TabIndex = 1;
-            this.labelPPP.Text = "30";
+            this.labelPPP.Text = "0";
             // 
             // labelPJ
             // 
@@ -722,9 +722,9 @@
             this.labelPJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPJ.Location = new System.Drawing.Point(8, 9);
             this.labelPJ.Name = "labelPJ";
-            this.labelPJ.Size = new System.Drawing.Size(32, 24);
+            this.labelPJ.Size = new System.Drawing.Size(21, 24);
             this.labelPJ.TabIndex = 0;
-            this.labelPJ.Text = "82";
+            this.labelPJ.Text = "0";
             // 
             // pictureBoxPlayer
             // 

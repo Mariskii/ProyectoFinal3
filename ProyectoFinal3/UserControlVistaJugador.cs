@@ -5,7 +5,10 @@ using ProyectoFinal3.Clases.TuProyecto.Models;
 using ProyectoFinal3.Properties;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
+using System.Drawing;
+
 
 namespace ProyectoFinal3
 {
@@ -20,7 +23,7 @@ namespace ProyectoFinal3
         private Jugador jugador = new Jugador();
         private List<Temporada> temporadas = new List<Temporada>();
         private Premios premios = new Premios();
-        private List<string> equipos = new List<string>();
+        private List<byte[]> equipos = new List<byte[]>();
 
         //Lista de pictureBox para pintar los trofeos
         private List<PictureBox> pictureBoxesPremios;
@@ -190,11 +193,13 @@ namespace ProyectoFinal3
 
             string equipo;
 
-            while (reader.Read()) 
+            while (reader.Read())
             {
-                equipo = Convert.ToString(reader["FotoEquipoUrl"]);
+                // Obtén la información de la imagen del jugador en formato de bytes
+                byte[] imagenJugador = reader.IsDBNull(reader.GetOrdinal("imagen_equipo")) ? null : (byte[])reader["imagen_equipo"];
 
-                equipos.Add(equipo);
+                // Agrega la imagen del jugador a la lista
+                equipos.Add(imagenJugador);
             }
 
             conn.Close();
@@ -202,10 +207,15 @@ namespace ProyectoFinal3
 
         private void paintPlayerTeams() 
         {
-            foreach(string equipo in equipos) 
+            foreach(byte[] equipo in equipos) 
             {
                 PictureBox pictureBox = new PictureBox();
-                pictureBox.Load(equipo);
+
+                MemoryStream stream = new MemoryStream(equipo);
+
+                Image imagen = Image.FromStream(stream);
+                pictureBox.Image = imagen;
+
 
                 pictureBox.Width = 50;
                 pictureBox.Height = 50;
@@ -279,13 +289,17 @@ namespace ProyectoFinal3
 
         private void paintPlayerStats() 
         {
-            //añadir las posibles temporadas a visualizar del jugador
-            foreach(Temporada temporada in temporadas) 
+            //Si hay estadísticas para ese jugador se cargaran en el combobox
+            if(temporadas.Count > 0) 
             {
-                comboBoxTemporada.Items.Add(temporada.season);
-            }
+                //añadir las posibles temporadas a visualizar del jugador
+                foreach (Temporada temporada in temporadas)
+                {
+                    comboBoxTemporada.Items.Add(temporada.season);
+                }
 
-            comboBoxTemporada.SelectedIndex = 0;
+                comboBoxTemporada.SelectedIndex = 0;
+            }
         }
 
         private void paintPlayerMainInfo() 
